@@ -15,6 +15,8 @@ const urlRegex = /http:\/\/(?:www\.)?[a-zA-Z0-9-]+\:\d+/g
 
 // ignore app list
 const ignoreList = ["qwik-jsx", "qwik-tsx"];
+const includeList = process.argv.slice(2);
+console.log(`includeList: `, includeList)
 
 let hasError = false;
 for (let appName of list) {
@@ -22,6 +24,10 @@ for (let appName of list) {
 		console.warn(`Ignoring ${appName}`);
 		continue;
 	}
+  if (includeList.length > 0 && !includeList.includes(appName)) {
+		console.warn(`Ignoring ${appName} since it is not included`);
+    continue;
+  }
 	let abPath = path.resolve(appDir, appName);
 	let err;
 	try {
@@ -82,7 +88,6 @@ function runInApp(dirPath, caseName) {
 			const browser = await chromium.launch();
 			const page = await browser.newPage();
 
-			// The actual interesting bit
 			await page.goto("http://localhost:4173/");
 
 			try {

@@ -1,7 +1,6 @@
-// @ts-ignore
-import { defineConfig } from 'rolldown-vite'
+import { defineConfig, Plugin } from 'rolldown-vite'
 import solid from 'vite-plugin-solid'
 
 export default defineConfig({
-  plugins: [solid()],
+  plugins: [solid() as Plugin],
 })
