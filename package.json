@@ -1,12 +1,19 @@
 {
-	"description": "",
-	"devDependencies": {
-		"rolldown-vite": "0.3.0",
-		"tree-kill": "^1.2.2"
-	},
-	"main": "index.js",
-	"name": "rolldown-eco-ci",
-	"scripts": {
-		"verify-build": "node ./packages/build-tester/index.mjs"
-	}
+  "name": "rolldown-eco-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "verify-build": "node ./packages/build-tester/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.9.0",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "playwright": "^1.45.2",
+    "rolldown-vite": "0.3.2",
+    "tree-kill": "^1.2.2"
+  }
 }
