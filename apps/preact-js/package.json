@@ -1,12 +1,17 @@
 {
-	"dependencies": {},
-	"devDependencies": {
-		"@preact/preset-vite": "^2.8.3"
-	},
-	"name": "preact-js",
-	"scripts": {
-		"build": "vite build",
-		"dev": "vite",
-		"preview": "vite preview"
-	}
+  "name": "preact-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.22.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.8.3"
+  }
 }
