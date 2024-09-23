@@ -1,7 +1,7 @@
 {
 	"dependencies": {},
 	"devDependencies": {
-		"@preact/preset-vite": "^2.8.3"
+		"@preact/preset-vite": "2.9.1"
 	},
 	"name": "preact-js",
 	"scripts": {
