@@ -1,12 +1,12 @@
 {
-	"name": "rolldown-eco-ci",
 	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"verify-build": "node ./packages/build-tester/index.mjs"
-	},
 	"devDependencies": {
 		"rolldown-vite": "0.3.2",
 		"tree-kill": "1.2.2"
+	},
+	"main": "index.js",
+	"name": "rolldown-eco-ci",
+	"scripts": {
+		"verify-build": "node ./packages/build-tester/index.mjs"
 	}
 }

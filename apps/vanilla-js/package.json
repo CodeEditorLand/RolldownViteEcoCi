@@ -1,9 +1,9 @@
 {
+	"devDependencies": {},
 	"name": "vanilla-js",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"devDependencies": {}
+	}
 }
