@@ -1,12 +1,12 @@
 {
-	"dependencies": {},
-	"devDependencies": {
-		"@preact/preset-vite": "2.9.1"
-	},
 	"name": "preact-js",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@preact/preset-vite": "2.9.1"
 	}
 }
