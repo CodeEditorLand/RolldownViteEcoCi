@@ -1,6 +1,6 @@
 {
-	"name": "build-tester",
 	"description": "",
 	"main": "index.js",
+	"name": "build-tester",
 	"scripts": {}
 }
