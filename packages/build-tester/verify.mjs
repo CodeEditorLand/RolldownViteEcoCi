@@ -1,5 +1,5 @@
-import { chromium } from "playwright";
 import assert from "node:assert";
+import { chromium } from "playwright";
 
 /**
  * @param {import("playwright").Page} page
@@ -33,35 +33,51 @@ export const customAssertMap = {
 		assert(content.includes("Vite"));
 	},
 	"preact-js": async (page) => {
-		let content = await (await page.waitForSelector("#app > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#app > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"preact-ts": async (page) => {
-		let content = await (await page.waitForSelector("#app > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#app > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"vue-js": async (page) => {
-		let content = await (await page.waitForSelector("#app > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#app > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"vue-ts": async (page) => {
-		let content = await (await page.waitForSelector("#app > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#app > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"react-jsx": async (page) => {
-		let content = await (await page.waitForSelector("#root > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#root > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"react-tsx": async (page) => {
-		let content = await (await page.waitForSelector("#root > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#root > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"solid-js": async (page) => {
-		let content = await (await page.waitForSelector("#root > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#root > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"solid-ts": async (page) => {
-		let content = await (await page.waitForSelector("#root > h1")).innerText();
+		let content = await (
+			await page.waitForSelector("#root > h1")
+		).innerText();
 		assert(content.includes("Vite"));
 	},
 	"svelte-js": async (page) => {
