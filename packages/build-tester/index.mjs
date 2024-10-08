@@ -1,24 +1,22 @@
 // @ts-check
 import { spawn } from "node:child_process";
-import * as fs from "node:fs";
 import * as path from "node:path";
+import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
 import treeKill from "tree-kill";
-
 import { customAssertMap, verify } from "./verify.mjs";
-
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 const appDir = path.resolve(__dirname, "../../apps");
 const list = fs.readdirSync(appDir);
 
-const urlRegex = /http:\/\/(?:www\.)?[a-zA-Z0-9-]+\:\d+/g;
+const urlRegex = /http:\/\/(?:www\.)?[a-zA-Z0-9-]+\:\d+/g
 
 // ignore app list
 const ignoreList = ["qwik-jsx", "qwik-tsx"];
 const includeList = process.argv.slice(2);
-console.log(`includeList: `, includeList);
+console.log(`includeList: `, includeList)
 
 let hasError = false;
 for (let appName of list) {
@@ -26,10 +24,10 @@ for (let appName of list) {
 		console.warn(`Ignoring ${appName}`);
 		continue;
 	}
-	if (includeList.length > 0 && !includeList.includes(appName)) {
+  if (includeList.length > 0 && !includeList.includes(appName)) {
 		console.warn(`Ignoring ${appName} since it is not included`);
-		continue;
-	}
+    continue;
+  }
 	let abPath = path.resolve(appDir, appName);
 	let err;
 	try {
@@ -64,9 +62,9 @@ function runInApp(dirPath, caseName) {
 
 		let data = "";
 
-		setTimeout(() => {
-			runTest();
-		}, 2000);
+    setTimeout(() => {
+        runTest()
+    }, 2000)
 		async function runTest() {
 			let exitCode = p.exitCode;
 			let err;
