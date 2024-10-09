@@ -1,12 +1,12 @@
 {
-	"dependencies": {},
-	"devDependencies": {
-		"eslint-plugin-react-refresh": "0.4.12"
-	},
 	"name": "react-jsx",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint-plugin-react-refresh": "0.4.12"
 	}
 }
