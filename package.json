@@ -11,8 +11,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
-    "@playwright/test": "^1.47.0",
-    "playwright": "^1.45.2",
+    "@playwright/test": "^1.52.0",
+    "playwright": "^1.52.0",
     "rolldown-vite": "https://pkg.pr.new/rolldown/vite/vite@07af24adcc541d9254f1504749e4cc4910c0dc8c",
     "tree-kill": "^1.2.2"
   }
